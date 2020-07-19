@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { login } from '../../redux/auth/auth.actions';
 import './loginpage.styles.scss';
 import Button from '../../components/button/button.component';
+import FormInput from '../../components/formInput/formInput.component';
 
 const LoginPage = () => {
     const [email, setEmail] = useState('');
@@ -15,12 +16,12 @@ const LoginPage = () => {
 
     return (
         <div>
-            <div className="form-group">
-                <input className="form-input" onChange={event => setEmail(event.target.value)} value={email} />
-                <label className={`form-input-label ${email.length ? 'shrink' : ''}`}>
-                    Email
-                </label>
-            </div>
+            <FormInput
+                label="Email"
+                hint="You can use oyster@gmail.com for testing this app"
+                onChange={event => setEmail(event.target.value.trim())}
+                value={email}
+            />
             <Button onClick={handleLogin}>Login</Button>
         </div>
     );

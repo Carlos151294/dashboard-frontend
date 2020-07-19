@@ -1,5 +1,6 @@
-.main-container {
-    height: 80vh;
+@import '../../assets/custom_styles/variables';
+
+.info-container {
     display: flex;
     flex-direction: column;
     justify-content: center;

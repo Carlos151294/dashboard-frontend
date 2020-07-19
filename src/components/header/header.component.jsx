@@ -30,7 +30,7 @@ const Header = () => {
                 }
                 {isLogged &&
                     <div className="nav-option">
-                        <div onClick={handleLogout}>Logout</div>
+                        <div className="cursor" onClick={handleLogout}>Logout</div>
                     </div>
                 }
             </div>

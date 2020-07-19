@@ -1,17 +1,19 @@
 import React from 'react';
 
+import Container from '../../components/container/container.component';
+
 import './contactpage.styles.scss';
 
 const ContactPage = () => {
     return (
-        <div className="main-container">
+        <Container className="info-container">
             <div className="author-data-field">
                 Application powered by Carlos Flores Nava
-            </div>
+                </div>
             <div className="author-data-field">
                 carlos.flores.nava94@gmail.com
-            </div>
-        </div>
+                </div>
+        </Container>
     );
 }
 

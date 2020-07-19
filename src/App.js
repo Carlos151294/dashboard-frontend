@@ -15,7 +15,7 @@ function App() {
   const { isLogged } = useSelector(state => state.auth);
 
   return (
-    <div>
+    <main className="app-container">
       <Header />
       <Switch>
         <Route exact path='/' render={() => isLogged ? (<Redirect to='dashboard' />) : (<Redirect to='login' />)} />
@@ -23,7 +23,7 @@ function App() {
         <Route path='/dashboard' render={() => isLogged ? (<DashboardPage />) : (<Redirect to='login' />)} />
         <Route path='/contact' component={ContactPage} />
       </Switch>
-    </div>
+    </main>
   );
 }
 

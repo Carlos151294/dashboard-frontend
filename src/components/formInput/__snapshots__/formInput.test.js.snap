@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Excepect to render FormInput component 1`] = `ShallowWrapper {}`;
+
+exports[`Excepect to render FormInput component with both label and hint 1`] = `ShallowWrapper {}`;
+
+exports[`Excepect to render FormInput component with label and hint 1`] = `ShallowWrapper {}`;
+
+exports[`Excepect to render FormInput component with no hint 1`] = `ShallowWrapper {}`;
+
+exports[`Excepect to render FormInput component with no properties 1`] = `ShallowWrapper {}`;
+
+exports[`Excepect to render FormInput component with only hint 1`] = `ShallowWrapper {}`;
+
+exports[`Excepect to render FormInput component with only label 1`] = `ShallowWrapper {}`;
+
+exports[`Excepect to render FormInput component with value, label and hint 1`] = `ShallowWrapper {}`;

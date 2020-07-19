@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Excepect to render Container component 1`] = `ShallowWrapper {}`;
+
+exports[`Excepect to render Container component with classname property 1`] = `ShallowWrapper {}`;
+
+exports[`Excepect to render Container component with no classname property 1`] = `ShallowWrapper {}`;

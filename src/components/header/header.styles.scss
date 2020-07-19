@@ -1,4 +1,7 @@
+@import '../../assets/custom_styles/variables';
+
 .header-container {
+	height: $header-height;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -20,7 +23,6 @@
 
 	.nav-options {
 		flex-grow: 1;
-		height: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
@@ -30,5 +32,9 @@
 .nav-option {
 	height: 100%;
     padding: 10px 15px;
-    cursor: pointer;
+
+}
+
+.cursor {
+	cursor: pointer;
 }
