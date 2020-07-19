@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch, Redirect } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+
+// Styles
+import './App.scss';
+
+// Pages
+import DashboardPage from './pages/dashboard/dashboard.component';
+import LoginPage from './pages/loginpage/loginpage.component';
 
 function App() {
+  const { isLogged } = useSelector(state => state.auth);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Switch>
+        <Route exact path='/' render={() => isLogged ? (<Redirect to='dashboard' />) : (<Redirect to='login' />)} />
+        <Route exact path='/login' render={() => isLogged ? (<Redirect to='dashboard' />) : (<LoginPage />)} />
+        <Route exact path='/dashboard' render={() => isLogged ? (<DashboardPage />) : (<Redirect to='login' />) } />
+      </Switch>
     </div>
   );
 }
