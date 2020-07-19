@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
+import PublicationList from '../../components/publicationList/publicationList.component';
 import { fetchPublications } from '../../redux/publications/publications.actions';
 
 import './dashboard.styles.scss';
@@ -14,7 +15,9 @@ const DashboardPage = () => {
     }, []);
 
     return (
-        <div className="container">Dashboard page</div>
+        <div className="container">
+            <PublicationList />
+        </div>
     );
 }
 

@@ -20,11 +20,11 @@ export const logoutSuccess = () => ({
     type: AuthActionTypes.LOGOUT_SUCCESS
 });
 
-export const login = () => async dispatch => {
+export const login = emailEntered => async dispatch => {
     dispatch(loginStart());
 
     try {
-        const { data: { authData: { token, expiresIn, firstName, lastName, email, userId } } } = await AuthService.login({ email: 'soren3@gmail.com' });
+        const { data: { authData: { token, expiresIn, firstName, lastName, email, userId } } } = await AuthService.login({ email: emailEntered });
         sessionStorage.setItem('token', token);
         dispatch(setAuthTimer(expiresIn));
         dispatch(loginSuccess({ expiresIn, user: {firstName, lastName, email, userId} }))
