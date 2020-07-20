@@ -9,7 +9,7 @@ In the project directory, you can run:
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Project will open the login page. In order to login, you have to fill in the form and you'll have to pick one email from the data.js file contained in the dashboard_api project: <a href="https://github.com/Carlos151294/dashboard-api" target="_blank">api</a> under the directory /dashboard_api/db.
+Project will open the login page. In order to login, you have to fill in the form and you'll have to pick one email from the data.js file contained in the <a href="https://github.com/Carlos151294/dashboard-api" target="_blank">dashboard_api project</a> under the directory /dashboard_api/db.
 
 ### `yarn test`
 
