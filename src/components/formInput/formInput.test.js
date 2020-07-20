@@ -3,10 +3,12 @@ import { shallow } from 'enzyme';
 import FormInput from './formInput.component';
 
 it('Excepect to render FormInput component with value, label and hint', () => {
-    const mockLabel = 'My label';
-    const mockValue = 'My value';
-    const mockHint = 'My hint';
-    expect(shallow(<FormInput value={mockValue} label={mockLabel} hint={mockHint} />)).toMatchSnapshot();
+    const mockProps = {
+        value: 'example@gmail.com',
+        label: 'My label',
+        hint: 'My hint'
+    };
+    expect(shallow(<FormInput {...mockProps} />)).toMatchSnapshot();
 });
 
 it('Excepect to render FormInput component with no hint', () => {

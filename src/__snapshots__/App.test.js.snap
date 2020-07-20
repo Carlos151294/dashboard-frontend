@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Excepect to render App component 1`] = `ShallowWrapper {}`;
+
+exports[`Excepect to render App component without crashing 1`] = `ShallowWrapper {}`;

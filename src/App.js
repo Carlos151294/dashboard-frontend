@@ -22,6 +22,7 @@ function App() {
         <Route path='/login' render={() => isLogged ? (<Redirect to='dashboard' />) : (<LoginPage />)} />
         <Route path='/dashboard' render={() => isLogged ? (<DashboardPage />) : (<Redirect to='login' />)} />
         <Route path='/contact' component={ContactPage} />
+        <Route render={() => <Redirect to='login' />} />
       </Switch>
     </main>
   );
